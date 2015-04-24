@@ -22,8 +22,8 @@ class sweetController extends Controller {
 	
 	public function postPeople() {
 		$number = Request::input('number');
-		$birthday = Input::get('birthday');
-		$profile = Input::get('profile');
+		$birthday = Request::input('birthday');
+		$profile = Request::input('profile');
 		$birthdays = array();
 		$profiles = array();
 		if($birthday) {
@@ -33,10 +33,13 @@ class sweetController extends Controller {
 			$profiles = $this->getProfiles($number);
 		}
                 $names = $this->getNames($number);
-		return view('resultsPeople')->with('names', $names, 'birthdays', $birthdays, 'birthday', $birthday, 'profiles', $profiles, 'profile', $profile);
+		return view('resultsPeople')->with('names', $names)->with('birthday', $birthday)->with('birthdays', $birthdays)->with('profiles', $profiles)->with('profile', $profile);
 	}
 	public function getParagraphs($number) {
-		$paragraphs = ["Hello", "World", "This is a paragraphs", "test", "abcdefg", "hijklmno", "pqrstu", "vwxyz"];
+		$paragraphs = ["SKLHERKFHSELRKJFLKJJNCKJSDNCLKSDNVLKNLERHJJKHLKJRHLKJRHTELKTTHLKJRENJKNKLJ", "OIEURJKLNKEOIUNVOIUWCIMROCJSLKERMFLKEMRFLKKMRLKMELERMLFKEMFL", "ERJLKNFLSKEJRHLJKHJKNRJKLSHRLNLKNJLKNSELJKNFRLKJNFLKJSRENSELKNFL",
+                               "NERJKLNFEJRNLJRNLJNNLVNSKJENVLJKNVJKLSNVLKJSNVDJKLNFLKNNSDLJNFLSDNVLD", "NJSNLRNLSJKENVJLSNVJLKSNJVNSKLJRNVLJRNLHERLJHERHSLKHRJHGLJKSERHRGHL", "NLAJKNFJKLWAENLKJAWNEFLKJWNFLKJWNFLKJENWFLKJWENLJKENFKLJQNFJKJLFWQ",
+                               "ELRKJSRJKHSKJLHFHLNLSNLKJNKJLNVJKWNKLJWNJKLNRVJKWNJKNWKLJVNJK", "NJNSEJKLNLKJNLNSJNVKLJSDNLKJNVKJDFNKJFDVNKJFDNDFJKKLJDFNLJKNKJSDNKJDNJK", "KKLESJRNFKJSENKJNJPOIUIONKSNKLNFVJLKNJKLJEHFLKJHKJHLKWEHRIUPHUINSDLKJFNVJLKSDNLJ",
+                               "JNLKJSNFDLKJVNFDSVLKJSNDVKJSNDLJKNJKNKJDNFJNDDSKLJ"];
 		$max = sizeof($paragraphs)-1;
 		$paragraph_list = array();
 		for($i = 0; $i < $number; $i++) {

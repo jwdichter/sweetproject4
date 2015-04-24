@@ -11,7 +11,7 @@
         @if($birthday)
         <h1>These are their Birthdays!</h1>
         <ul>
-                @for($i = 0; $i < count($birthdays); $i++) {
+                @for($i = 0; $i < count($birthdays); $i++)
                         <li>{{$names[$i].' - '.$birthdays[$i]}}</li>
 	        @endfor
             
@@ -21,7 +21,7 @@
         @if($profile)
         <h1>And these are their Profiles!</h1>
         <ul>
-                @for($i = 0; $i < count($profiles); $i++) {
+                @for($i = 0; $i < count($profiles); $i++)
                         <li>{{$names[$i].' - '.$profiles[$i]}}</li>
 	        @endfor
             
