@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 use Request;
+use Input;
 class sweetController extends Controller {
 	public function getIndex() {
 		return view('index');
@@ -21,8 +22,8 @@ class sweetController extends Controller {
 	
 	public function postPeople() {
 		$number = Request::input('number');
-		$birthday = Request::input('birthday');
-		$profile = Request::input('profile');
+		$birthday = Input::get('birthday');
+		$profile = Input::get('profile');
 		$birthdays = array();
 		$profiles = array();
 		if($birthday) {

@@ -8,7 +8,7 @@
 		@endforeach
 	</ul>
         
-        @if($birthday===true)
+        @if($birthday)
         <h1>These are their Birthdays!</h1>
         <ul>
                 @for($i = 0; $i < count($birthdays); $i++) {
@@ -18,7 +18,7 @@
         </ul>
         @endif
         
-        @if($profiles===true)
+        @if($profile)
         <h1>And these are their Profiles!</h1>
         <ul>
                 @for($i = 0; $i < count($profiles); $i++) {
