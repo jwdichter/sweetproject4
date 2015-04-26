@@ -1,7 +1,7 @@
 @extends('_master')
 
 @section('content')
-	<h1>This is working!</h1>
+	<h1>People Form!</h1>
 	<p>Indicate the maximum integer you want to get a random number for.</p>
 	<form method="post" action="/people">
 		Number of People: <br/>

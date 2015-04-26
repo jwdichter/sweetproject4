@@ -1,9 +1,5 @@
 @extends('_master')
 
-@section('title')
-	This is a working title!
-@stop
-
 @section('head')
 	<link type="text/css" rel="stylesheet" href="css/style.css"/>
 @stop

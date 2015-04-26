@@ -1,6 +1,7 @@
 @extends('_master')
 
 @section('content')
+	<h1>Text Form!</h1>
 	<form method="post" action="/text">
 		Number of Paragraphs: <br/>
 		<input type="text" name="number"/>

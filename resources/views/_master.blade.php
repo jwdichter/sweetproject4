@@ -2,8 +2,9 @@
 <html>
 <head>
     <title>
-        @yield('title')
+        Random Generator
     </title>
+        <a href='/'>Random Generator</a>
         @yield('head')
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
