@@ -28,12 +28,17 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ##Readme
 ###Author
 Justin Dichter
+
 my laptop, room 207, Atkins
 ###General Info
 Site: https://github.com/jwdichter/sweetproject4/
+
 Date of Deployment: 4/24/15
 ###Change Log
 4/23 Created Repository
+
 4/24 Made edits to site
+
 4/24 Completed site
+
 4/26 Deployed
